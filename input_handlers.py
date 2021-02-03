@@ -3,8 +3,6 @@ import tcod.event
 from actions import Action, EscapeAction, MovementAction
 
 # 事件处理器
-
-
 class EventHandler(tcod.event.EventDispatch[Action]):
 
     # 事件推出
