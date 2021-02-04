@@ -8,10 +8,7 @@ class GameMap:
     # 初始化地图
     def __init__(self, width: int, height: int):
         self.width, self.height = width, height
-        self.tiles = np.full(
-            (width, height), fill_value=tile_types.floor, order="F")
-
-        self.tiles[30:33, 22] = tile_types.wall
+        self.tiles = np.full((width, height), fill_value=tile_types.wall, order="F")
 
     # 检测是否在地图里面
     def in_bounds(self, x: int, y: int) -> bool:
